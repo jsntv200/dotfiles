@@ -19,9 +19,12 @@ task :install do
   file_operation(Dir.glob('vim'))
   file_operation(Dir.glob('vim/vimrc'))
 
+  install_fonts if RUBY_PLATFORM.downcase.include?("darwin")
+
   success_msg("installed")
 end
 
+task :default => 'install'
 
 private
 
@@ -29,6 +32,14 @@ private
     puts
     puts "[Installing] #{cmd}"
     `#{cmd}` unless ENV['DEBUG']
+  end
+
+  def install_fonts
+    puts "======================================================"
+    puts "Installing patched fonts for Powerline."
+    puts "======================================================"
+    run %{ cp -f $HOME/.dotfiles/fonts/* $HOME/Library/Fonts }
+    puts
   end
 
   def file_operation(files, method = :symlink)
@@ -45,6 +56,7 @@ private
       puts "file:   #{file}"
       puts "source: #{source}"
       puts "target: #{target}"
+      puts ""
 
       if File.exists?(target) || File.symlink?(target)
         unless skip_all || overwrite_all || backup_all
