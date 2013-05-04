@@ -8,7 +8,7 @@ Installation
 
   1. Clone the repository:
 
-        git clone --recursive https://github.com/jsntv200/dofiles.git "${ZDOTDIR:-$HOME}/.dotfiles"
+        git clone --recursive git@github.com:jsntv200/dotfiles.git "${ZDOTDIR:-$HOME}/.dotfiles"
 
   2. Link the dotfiles:
 
