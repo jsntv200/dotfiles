@@ -1,8 +1,18 @@
+dotfiles=$HOME/.dotfiles
+zprezto=$HOME/.zprezto
+
+
+#
+# Load secrets
+#
+if [ -e $HOME/.secrets ]; then
+  source $HOME/.secrets
+fi
+
+
 #
 # Aliases
 #
-
-dotfiles=$HOME/.dotfiles
 
 alias v='mvim'
 
@@ -15,7 +25,7 @@ alias zpe='v $HOME/.zpreztorc'
 alias zr='source $dotfiles/zsh/zshrc'
 
 # Show me the aliases
-alias sal='p $dotfiles/zsh/zshrc | ag --nocolor "alias " && ag --nocolor "alias " $HOME/.zprezto/modules'
+alias sal='p $dotfiles/zsh/zshrc | ag --nocolor "alias " && ag --nocolor "alias " $zprezto/modules'
 
 # Show me files matching "ls ag"
 alias lsf='ll | ag'
@@ -39,5 +49,5 @@ alias ka9='killall -9'
 alias k9='kill -9'
 
 # Git
-alias gfa='p $HOME/.zprezto/modules/git/alias.zsh | ag --nocolor '
+alias gfa='p $zprezto/modules/git/alias.zsh | ag --nocolor '
 alias gsuo='gfm upstream master && gwR upstream master && gp origin master'
