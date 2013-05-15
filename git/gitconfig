@@ -25,6 +25,8 @@
 
   # branch
   b = branch -v                     # branch (verbose)
+  bm = branch --merged              # branches that have been merged
+  bnm = branch --no-merged          # branches that haven't been merged
 
   # commit
   c = commit -m                     # commit with message
