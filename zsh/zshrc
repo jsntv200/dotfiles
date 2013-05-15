@@ -20,6 +20,8 @@ alias v='mvim'
 alias ve='v $dotfiles/vim/vimrc'
 alias ze='v $dotfiles/zsh/zshrc'
 alias zpe='v $HOME/.zpreztorc'
+alias ge='v $dotfiles/git/gitconfig'
+alias he='sudo vim /etc/hosts'
 
 # Reload settings
 alias zr='source $dotfiles/zsh/zshrc'
@@ -51,3 +53,9 @@ alias k9='kill -9'
 # Git
 alias gfa='p $zprezto/modules/git/alias.zsh | ag --nocolor '
 alias gsuo='gfm upstream master && gwR upstream master && gp origin master'
+
+# nginx
+alias ngs='sudo nginx'
+alias ngr='sudo nginx -s stop && ngs'
+alias nge='v /usr/local/etc/nginx/nginx.conf'
+
