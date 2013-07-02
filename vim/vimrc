@@ -374,3 +374,8 @@ let g:syntastic_html_checker = ""
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+
+" Folders to ignore in ctrlp
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
+
