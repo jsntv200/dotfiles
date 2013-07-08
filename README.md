@@ -13,3 +13,7 @@ Installation
   2. Link the dotfiles:
 
         cd ~/.dotfiles && rake
+
+  3. Install the submodules
+
+        git submodule init && git submodule update
