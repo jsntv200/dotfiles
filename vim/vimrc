@@ -378,4 +378,3 @@ let g:html_indent_style1 = "inc"
 
 " Folders to ignore in ctrlp
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
-

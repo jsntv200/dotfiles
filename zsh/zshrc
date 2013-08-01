@@ -58,7 +58,7 @@ alias gsuo='gfm upstream master && gwR upstream master && gp origin master'
 alias ngs='sudo nginx'
 alias ngr='sudo nginx -s stop && ngs'
 alias nge='v /usr/local/etc/nginx/nginx.conf'
-
+alias nge12wbt='v /Users/jason/Sites/12wbt-init/etc/nginx.conf'
 
 
 # Credits to npm's. Awesome completion utility.
