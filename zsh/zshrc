@@ -119,3 +119,6 @@ fi
 
 # Node binaries
 PATH=$PATH:/usr/local/share/npm/bin/
+
+# Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin
