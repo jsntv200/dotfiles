@@ -116,3 +116,6 @@ elif type compctl &>/dev/null; then
   compctl -K _bower_completion bower
 fi
 ###-end-bower-completion-###
+
+# Node binaries
+PATH=$PATH:/usr/local/share/npm/bin/
