@@ -100,7 +100,7 @@ augroup END
 
 if has('gui_running')
   set guioptions=egmrt
-  set gfn=Inconsolata-dz\ for\ Powerline:h14
+  set gfn=Inconsolata-dz\ for\ Powerline:h15
 endif
 
 
@@ -374,7 +374,22 @@ let g:syntastic_html_checker = ""
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+let g:html_indent_tags = 'li\|p'
+
+
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\\ --nogroup\\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
 
 
 " Folders to ignore in ctrlp
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
+
+
+" Enable snipmate
+" :filetype plugin on
