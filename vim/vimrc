@@ -80,7 +80,7 @@ augroup vimrcEx
   autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
 
   " Indent p tags
-  autocmd FileType html,eruby if g:html_indent_tags !~ '\\|p\>' | let g:html_indent_tags .= '\|p\|li\|dt\|dd' | endif
+  " autocmd FileType html,eruby if g:html_indent_tags !~ '\\|p\>' | let g:html_indent_tags .= '\|p\|li\|dt\|dd' | endif
 
   " Don't syntax highlight markdown because it's often wrong
   autocmd! FileType mkd setlocal syn=off
@@ -390,6 +390,8 @@ endif
 " Folders to ignore in ctrlp
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp'
 
-
 " Enable snipmate
 " :filetype plugin on
+
+" Enable The Silver Search
+let g:agprg = '--column'
