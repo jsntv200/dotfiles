@@ -49,3 +49,6 @@
 [submodule "vim/bundle/ag"]
 	path = vim/bundle/ag
 	url = git://github.com/rking/ag.vim
+[submodule "vim-liquid"]
+	path = vim-liquid
+	url = git@github.com:tpope/vim-liquid.git
