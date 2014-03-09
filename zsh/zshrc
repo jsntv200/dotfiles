@@ -125,3 +125,6 @@ PATH=$PATH:/usr/local/share/npm/bin
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
+
+# Postgres
+PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
