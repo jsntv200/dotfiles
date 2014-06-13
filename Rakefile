@@ -43,7 +43,7 @@ private
   end
 
   def file_operation(files, method = :symlink)
-    skip_all = false
+    skip_all = true
     overwrite_all = false
     backup_all = false
 

@@ -21,7 +21,6 @@ alias ve='v $dotfiles/vim/vimrc'
 alias ze='v $dotfiles/zsh/zshrc'
 alias zpe='v $HOME/.zpreztorc'
 alias ge='v $dotfiles/git/gitconfig'
-alias he='sudo vim /etc/hosts'
 
 # Reload settings
 alias zr='source $dotfiles/zsh/zshrc'
@@ -55,10 +54,9 @@ alias gfa='p $zprezto/modules/git/alias.zsh | ag --nocolor '
 alias gsuo='gfm upstream master && gwR upstream master && gp origin master'
 
 # nginx
-alias ngs='sudo nginx'
-alias ngr='sudo nginx -s stop && ngs'
-alias nge='v /usr/local/etc/nginx/nginx.conf'
-alias nge12wbt='v /Users/jason/Sites/12wbt-init/etc/nginx.conf'
+alias nginx-start='sudo nginx'
+alias nginx-stop='sudo nginx -s stop'
+alias nginx-retart='nginx-stop && nginx-start'
 
 # Bower http://bower.io
 alias bower='noglob bower'
