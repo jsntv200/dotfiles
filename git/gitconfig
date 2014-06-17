@@ -1,8 +1,14 @@
 # set your user tokens as enivornment variables, such as ~/.secrets
 # See the README for examples.
+[hub]
+  protocol = https
+
 [user]
-  name = jsntv200
+  name = Jason Taylor
   email = jason@redant.com.au
+
+[credential]
+  helper = /opt/boxen/bin/boxen-git-credential
 
 [color]
   ui = true
@@ -116,7 +122,7 @@
 [core]
   autocrlf = false
   editor = vim
-  excludesfile = ~/.dotfiles/git/gitignore
+  excludesfile = /opt/boxen/config/git/gitignore
 
 [advice]
   statusHints = false
