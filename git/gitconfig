@@ -7,6 +7,11 @@
   name = Jason Taylor
   email = jason@redant.com.au
 
+[core]
+  autocrlf = false
+  editor = vim
+  excludesfile = /opt/boxen/config/git/gitignore
+
 [credential]
   helper = /opt/boxen/bin/boxen-git-credential
 
@@ -119,11 +124,6 @@
   # the usual default is to push all branches
   default = tracking
 
-[core]
-  autocrlf = false
-  editor = vim
-  excludesfile = /opt/boxen/config/git/gitignore
-
 [advice]
   statusHints = false
 
@@ -136,10 +136,3 @@
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
   enabled = true
-
-[difftool "Kaleidoscope"]
-    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustExitCode = true
