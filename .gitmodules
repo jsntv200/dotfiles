@@ -52,3 +52,6 @@
 [submodule "vim/bundle/liquid"]
 	path = vim/bundle/liquid
 	url = git://github.com/tpope/vim-liquid.git
+[submodule "vim/bundle/puppet"]
+	path = vim/bundle/puppet
+	url = git://github.com/rodjek/vim-puppet.git
