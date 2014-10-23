@@ -14,6 +14,7 @@ task :install do
   puts
 
   # this has all the runcoms from this directory.
+  file_operation(Dir.glob('ag/*'))
   file_operation(Dir.glob('git/*'))
   file_operation(Dir.glob('ruby/*'))
   file_operation(Dir.glob('vim'))
