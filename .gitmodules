@@ -74,3 +74,9 @@
 	path = vim/bundle/puppet
 	url = git://github.com/rodjek/vim-puppet.git
     ignore = dirty
+[submodule "vim/bundle/swift"]
+	path = vim/bundle/swift
+	url = git://github.com/toyamarinyon/vim-swift.git
+[submodule "vim/bundle/gruvbox"]
+	path = vim/bundle/gruvbox
+	url = git@github.com:morhetz/gruvbox.git

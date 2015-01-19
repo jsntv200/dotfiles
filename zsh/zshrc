@@ -9,6 +9,15 @@ if [ -e $HOME/.secrets ]; then
   source $HOME/.secrets
 fi
 
+#
+# Node Environment
+#
+export NODE_ENV=development
+
+#
+# Gruvbox vim palette for the terminal
+#
+~/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh
 
 #
 # Aliases

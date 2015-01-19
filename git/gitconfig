@@ -136,3 +136,7 @@
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
   enabled = true
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
