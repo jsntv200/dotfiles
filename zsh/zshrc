@@ -17,7 +17,7 @@ export NODE_ENV=development
 #
 # Gruvbox vim palette for the terminal
 #
-~/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh
+$dotfiles/vim/bundle/gruvbox/gruvbox_256palette_osx.sh
 
 #
 # Aliases
@@ -59,16 +59,16 @@ alias ka9='killall -9'
 alias k9='kill -9'
 
 # Git
-alias gfa='p $zprezto/modules/git/alias.zsh | ag --nocolor '
-alias gsuo='gfm upstream master && gwR upstream master && gp origin master'
-
-# nginx
-alias nginx-start='sudo nginx'
-alias nginx-stop='sudo nginx -s stop'
-alias nginx-retart='nginx-stop && nginx-start'
+alias git-alias='p $zprezto/modules/git/alias.zsh | ag --nocolor'
 
 # Bower http://bower.io
 alias bower='noglob bower'
+
+# Spotlight shortcuts
+alias spotlight-start='sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist'
+alias spotlight-stop='sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist'
+alias spotlight-restart='spotlight-stop && spotlight-start'
+
 
 
 # Credits to npm's. Awesome completion utility.
