@@ -30,6 +30,216 @@
 	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
+		<key>Gruvbox Dark</key>
+		<dict>
+			<key>Ansi 0 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.157</string>
+				<key>Green Component</key>
+				<string>0.157</string>
+				<key>Red Component</key>
+				<string>0.157</string>
+			</dict>
+			<key>Ansi 1 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.114</string>
+				<key>Green Component</key>
+				<string>0.141</string>
+				<key>Red Component</key>
+				<string>0.800</string>
+			</dict>
+			<key>Ansi 10 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.149</string>
+				<key>Green Component</key>
+				<string>0.733</string>
+				<key>Red Component</key>
+				<string>0.722</string>
+			</dict>
+			<key>Ansi 11 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.184</string>
+				<key>Green Component</key>
+				<string>0.741</string>
+				<key>Red Component</key>
+				<string>0.980</string>
+			</dict>
+			<key>Ansi 12 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.596</string>
+				<key>Green Component</key>
+				<string>0.647</string>
+				<key>Red Component</key>
+				<string>0.514</string>
+			</dict>
+			<key>Ansi 13 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.608</string>
+				<key>Green Component</key>
+				<string>0.525</string>
+				<key>Red Component</key>
+				<string>0.827</string>
+			</dict>
+			<key>Ansi 14 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.486</string>
+				<key>Green Component</key>
+				<string>0.753</string>
+				<key>Red Component</key>
+				<string>0.557</string>
+			</dict>
+			<key>Ansi 15 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.698</string>
+				<key>Green Component</key>
+				<string>0.859</string>
+				<key>Red Component</key>
+				<string>0.921</string>
+			</dict>
+			<key>Ansi 2 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.102</string>
+				<key>Green Component</key>
+				<string>0.592</string>
+				<key>Red Component</key>
+				<string>0.596</string>
+			</dict>
+			<key>Ansi 3 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.129</string>
+				<key>Green Component</key>
+				<string>0.600</string>
+				<key>Red Component</key>
+				<string>0.843</string>
+			</dict>
+			<key>Ansi 4 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.533</string>
+				<key>Green Component</key>
+				<string>0.522</string>
+				<key>Red Component</key>
+				<string>0.271</string>
+			</dict>
+			<key>Ansi 5 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.525</string>
+				<key>Green Component</key>
+				<string>0.384</string>
+				<key>Red Component</key>
+				<string>0.694</string>
+			</dict>
+			<key>Ansi 6 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.415</string>
+				<key>Green Component</key>
+				<string>0.616</string>
+				<key>Red Component</key>
+				<string>0.408</string>
+			</dict>
+			<key>Ansi 7 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.576</string>
+				<key>Green Component</key>
+				<string>0.682</string>
+				<key>Red Component</key>
+				<string>0.741</string>
+			</dict>
+			<key>Ansi 8 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.392</string>
+				<key>Green Component</key>
+				<string>0.435</string>
+				<key>Red Component</key>
+				<string>0.486</string>
+			</dict>
+			<key>Ansi 9 Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.204</string>
+				<key>Green Component</key>
+				<string>0.286</string>
+				<key>Red Component</key>
+				<string>0.984</string>
+			</dict>
+			<key>Background Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.157</string>
+				<key>Green Component</key>
+				<string>0.157</string>
+				<key>Red Component</key>
+				<string>0.157</string>
+			</dict>
+			<key>Bold Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.564</string>
+				<key>Green Component</key>
+				<string>0.565</string>
+				<key>Red Component</key>
+				<string>0.506</string>
+			</dict>
+			<key>Cursor Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.517</string>
+				<key>Green Component</key>
+				<string>0.510</string>
+				<key>Red Component</key>
+				<string>0.446</string>
+			</dict>
+			<key>Cursor Text Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.194</string>
+				<key>Green Component</key>
+				<string>0.156</string>
+				<key>Red Component</key>
+				<string>0.000</string>
+			</dict>
+			<key>Foreground Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.698</string>
+				<key>Green Component</key>
+				<string>0.859</string>
+				<key>Red Component</key>
+				<string>0.922</string>
+			</dict>
+			<key>Selected Text Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.564</string>
+				<key>Green Component</key>
+				<string>0.565</string>
+				<key>Red Component</key>
+				<string>0.506</string>
+			</dict>
+			<key>Selection Color</key>
+			<dict>
+				<key>Blue Component</key>
+				<string>0.194</string>
+				<key>Green Component</key>
+				<string>0.156</string>
+				<key>Red Component</key>
+				<string>0.000</string>
+			</dict>
+		</dict>
 		<key>Solarized Dark</key>
 		<dict>
 			<key>Ansi 0 Color</key>
@@ -1255,12 +1465,10 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSColorPanelMode</key>
-	<string>6</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/.dotfiles/iterm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
+	<string>{952, 758}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1284,18 +1492,22 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>1056 1031 201 309 0 0 2560 1418 </string>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>828 808 726 475 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>746 831 924 485 0 0 2560 1418 </string>
+	<string>-1738 671 924 485 -2560 0 2560 1440 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>-1409 530 384 129 -2560 0 2560 1440 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>863 522 1050 806 0 0 2560 1418 </string>
+	<string>-1289 595 650 526 -2560 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1 12 1282 1406 0 0 2560 1440 </string>
+	<string>-1485 338 1114 966 -2560 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>-1839 283 962 1126 -2560 0 2560 1418 </string>
+	<string>179 123 1074 927 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>-1350 411 834 806 -2560 0 2560 1418 </string>
+	<string>440 120 570 451 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2031,6 +2243,12 @@
 			<string>/Users/jason</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>454998030.14590299</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>457509337.01108199</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2095,7 +2313,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-01-19T01:08:17Z</date>
+	<date>2015-07-02T05:51:21Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2120,6 +2338,8 @@
 	<integer>10</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1433305216</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -2131,7 +2351,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>.Lucida Grande UI</string>
+	<string>.Helvetica Neue DeskInterface</string>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WindowStyle</key>
@@ -2143,6 +2363,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0.0.20141103</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
