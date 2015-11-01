@@ -1,128 +1,19 @@
-dotfiles=$HOME/.dotfiles
-zprezto=$HOME/.zprezto
+source ~/.antigen/antigen.zsh
 
+# Use oh-my-zsh
+antigen use oh-my-zsh
 
-#
-# Load secrets
-#
-if [ -e $HOME/.secrets ]; then
-  source $HOME/.secrets
-fi
+# Bundles
+antigen bundle zsh-users/zsh-completions src
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-history-substring-search
 
-#
-# Node Environment
-#
-export NODE_ENV=development
+# Load the theme
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
 
-#
-# Gruvbox vim palette for the terminal
-#
-$dotfiles/vim/bundle/gruvbox/gruvbox_256palette_osx.sh
+# Tell antigen that you're done
+antigen apply
 
-#
-# Aliases
-#
-
-alias v='mvim'
-
-# Editing config files
-alias ve='v $dotfiles/vim/vimrc'
-alias ze='v $dotfiles/zsh/zshrc'
-alias zpe='v $HOME/.zpreztorc'
-alias ge='v $dotfiles/git/gitconfig'
-
-# Reload settings
-alias zr='source $dotfiles/zsh/zshrc'
-
-# Show me the aliases
-alias sal='p $dotfiles/zsh/zshrc | ag --nocolor "alias " && ag --nocolor "alias " $zprezto/modules'
-
-# Show me files matching "ls ag"
-alias lsf='ll | ag'
-
-# PS
-alias psa='ps aux'
-alias psg='ps aux | ag '
-alias psr='ps aux | ag ruby'
-
-# Common shell functions
-alias tf='tail -f'
-alias lh='ls -alt | head' # see the last modified files
-alias cl='clear'
-
-# Zippin
-alias gzc='tar -zcvf'
-alias gzx='tar -zxvf'
-
-# Kill
-alias ka9='killall -9'
-alias k9='kill -9'
-
-# Git
-alias git-alias='p $zprezto/modules/git/alias.zsh | ag --nocolor'
-
-# Bower http://bower.io
-alias bower='noglob bower'
-
-# Spotlight shortcuts
-alias spotlight-start='sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist'
-alias spotlight-stop='sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist'
-alias spotlight-restart='spotlight-stop && spotlight-start'
-
-
-
-# Credits to npm's. Awesome completion utility.
-#
-# Bower completion script, based on npm completion script.
-
-###-begin-bower-completion-###
-#
-# Installation: bower completion >> ~/.bashrc  (or ~/.zshrc)
-# Or, maybe: bower completion > /usr/local/etc/bash_completion.d/npm
-#
-
-COMP_WORDBREAKS=${COMP_WORDBREAKS/=/}
-COMP_WORDBREAKS=${COMP_WORDBREAKS/@/}
-export COMP_WORDBREAKS
-
-if type complete &>/dev/null; then
-  _bower_completion () {
-    local si="$IFS"
-    IFS=$'\n' COMPREPLY=($(COMP_CWORD="$COMP_CWORD" \
-                           COMP_LINE="$COMP_LINE" \
-                           COMP_POINT="$COMP_POINT" \
-                           bower completion -- "${COMP_WORDS[@]}" \
-                           2>/dev/null)) || return $?
-    IFS="$si"
-  }
-  complete -F _bower_completion bower
-elif type compdef &>/dev/null; then
-  _bower_completion() {
-    si=$IFS
-    compadd -- $(COMP_CWORD=$((CURRENT-1)) \
-                 COMP_LINE=$BUFFER \
-                 COMP_POINT=0 \
-                 bower completion -- "${words[@]}" \
-                 2>/dev/null)
-    IFS=$si
-  }
-  compdef _bower_completion bower
-elif type compctl &>/dev/null; then
-  _bower_completion () {
-    local cword line point words si
-    read -Ac words
-    read -cn cword
-    let cword-=1
-    read -l line
-    read -ln point
-    si="$IFS"
-    IFS=$'\n' reply=($(COMP_CWORD="$cword" \
-                       COMP_LINE="$line" \
-                       COMP_POINT="$point" \
-                       bower completion -- "${words[@]}" \
-                       2>/dev/null)) || return $?
-    IFS="$si"
-  }
-  compctl -K _bower_completion bower
-fi
-###-end-bower-completion-###
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
