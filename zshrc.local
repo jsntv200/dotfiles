@@ -3,10 +3,13 @@ source ~/.antigen/antigen.zsh
 # Use oh-my-zsh
 antigen use oh-my-zsh
 
-# Bundles
+# oh-my-zsh bundles
+antigen bundle history-substring-search
+antigen bundle zsh_reload
+
+# Third party bundles
 antigen bundle zsh-users/zsh-completions src
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-history-substring-search
 
 # Load the theme
 antigen bundle mafredri/zsh-async
