@@ -12,6 +12,10 @@ Set the shell to zsh:
 
     chsh -s $(which zsh)
 
+Update brew:
+
+    brew update
+
 Install Inconsolata-dz for Powerline
 
     brew tap caskroom/fonts

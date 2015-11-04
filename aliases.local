@@ -1,33 +1,21 @@
-alias v='mvim'
-#alias vim='nvim'
-alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
-
-# Reload zsh
-alias reload='source ~/.zshrc'
-
-# Show me files matching "ls ag"
-alias lsf='ll | ag'
-
-# PS
+alias v='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
+alias vim='mvim'
+# ps
 alias psa='ps aux'
 alias psg='ps aux | ag '
 alias psr='ps aux | ag ruby'
 
-# Common shell functions
+# common shell functions
 alias tf='tail -f'
-alias lh='ls -alt | head' # see the last modified files
-alias cl='clear'
+alias lh='ls -alt | head'
+alias lag='la | ag'
+alias bower='noglob bower'
+alias k9='kill -9'
+alias p='less'
 
-# Zippin
+# gzip
 alias gzc='tar -zcvf'
 alias gzx='tar -zxvf'
-
-# Kill
-alias ka9='killall -9'
-alias k9='kill -9'
-
-# Bower http://bower.io
-alias bower='noglob bower'
 
 # Spotlight shortcuts
 alias spotlight-start='sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist'
