@@ -15,6 +15,7 @@ Set the shell to zsh:
 Update brew:
 
     brew update
+    brew install caskroom/cask/brew-cask
 
 Install Inconsolata-dz for Powerline
 
