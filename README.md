@@ -15,12 +15,6 @@ Set the shell to zsh:
 Update brew:
 
     brew update
-    brew install caskroom/cask/brew-cask
-
-Install Inconsolata-dz for Powerline
-
-    brew tap caskroom/fonts
-    brew cask install font-inconsolata-dz-for-powerline
 
 Install [rcm](https://github.com/thoughtbot/rcm):
 
@@ -45,7 +39,7 @@ Clone this repo:
 
 Install the dotfiles:
 
-    env RCRC=$HOME/.dotfiles/rcrc rcup
+    env RCRC=$HOME/.dotfiles-local/rcrc rcup
 
 After the initial installation, you can run `rcup` without the one-time variable
 `RCRC` being set (`rcup` will symlink the repo's `rcrc` to `~/.rcrc` for future
@@ -55,4 +49,14 @@ example](https://github.com/thoughtbot/dotfiles/blob/master/rcrc).
 You should run `rcup` after pulling a new version of the repository to symlink
 any new files in the repository.
 
-After install set iTerm to load preferences from ~/.iterm
+
+Post Installation
+-----------------
+
+Install Inconsolata-dz for Powerline
+
+    brew install caskroom/cask/brew-cask
+    brew tap caskroom/fonts
+    brew cask install font-inconsolata-dz-for-powerline
+
+After installation set iTerm to load preferences from ~/.iterm & set the font.
