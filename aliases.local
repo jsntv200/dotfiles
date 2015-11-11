@@ -1,5 +1,5 @@
-alias v='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
-alias vim='mvim'
+alias v='mvim'
+
 # ps
 alias psa='ps aux'
 alias psg='ps aux | ag '
@@ -17,7 +17,7 @@ alias p='less'
 alias gzc='tar -zcvf'
 alias gzx='tar -zxvf'
 
-# Spotlight shortcuts
+# spotlight shortcuts
 alias spotlight-start='sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist'
 alias spotlight-stop='sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist'
 alias spotlight-restart='spotlight-stop && spotlight-start'
