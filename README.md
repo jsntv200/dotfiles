@@ -27,7 +27,7 @@ Install [rcm](https://github.com/thoughtbot/rcm):
     brew tap thoughtbot/formulae
     brew install rcm
 
-Clone [antigen](https://github.com/zsh-users/antigen) for installing zsh plugins:
+Install [antigen](https://github.com/zsh-users/antigen) to handle zsh plugins:
 
     git clone https://github.com/zsh-users/antigen.git ~/.antigen
 
@@ -35,13 +35,13 @@ Clone [antigen](https://github.com/zsh-users/antigen) for installing zsh plugins
 Installation
 ------------
 
-Clone this repo:
-
-    git clone git://github.com/jsntv200/dotfiles.git ~/.dotfiles
-
 Clone [thoughbot dotfiles](https://github.com/thoughtbot/dotfiles):
 
-    git clone git://github.com/thoughtbot/dotfiles.git ~/.dotfiles-thoughtbot
+    git clone git://github.com/thoughtbot/dotfiles.git ~/.dotfiles
+
+Clone this repo:
+
+    git clone git://github.com/jsntv200/dotfiles.git ~/.dotfiles-local
 
 Install the dotfiles:
 
@@ -54,23 +54,5 @@ example](https://github.com/thoughtbot/dotfiles/blob/master/rcrc).
 
 You should run `rcup` after pulling a new version of the repository to symlink
 any new files in the repository.
-
-Additional Installs
--------------------
-
-Update iTerm2 to the latest nightly release
-
-    brew tap caskroom/versions
-    brew cask install iterm2-nightly
-
-Install Neovim to get full color vim in iTerm
-
-    brew tap neovim/homebrew-neovim
-    brew install --HEAD neovim
-
-Link neovim to vim
-
-    ln -s $HOME/.vim $HOME/.config/nvim
-    ln -s $HOME/.vimrc $HOME/.config/nvim/init.vim
 
 After install set iTerm to load preferences from ~/.iterm
