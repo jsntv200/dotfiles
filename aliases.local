@@ -1,5 +1,3 @@
-alias v='mvim'
-
 # ps
 alias psa='ps aux'
 alias psg='ps aux | ag '
