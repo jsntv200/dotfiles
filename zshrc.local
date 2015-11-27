@@ -1,0 +1,9 @@
+# Increase the ulimit
+# http://problemsolv.in/fix-mac-os-x-yosemite-ulimit-problem/
+ulimit -n 4096
+
+# Secrets
+[ -f ~/.secrets ] && source ~/.secrets
+
+# Boxen
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh

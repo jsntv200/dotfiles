@@ -1,23 +1,62 @@
-Dotfiles
-==============================
+dotfiles
+========
 
-Dotfiles for git, ruby, vim and zsh.
+Local dotfiles for use with
+[thoughbot dotfiles](https://github.com/thoughtbot/dotfiles)
+
+
+Requirements
+------------
+
+Set the shell to zsh:
+
+    chsh -s $(which zsh)
+
+Update brew:
+
+    brew update
+
+Install [rcm](https://github.com/thoughtbot/rcm):
+
+    brew tap thoughtbot/formulae
+    brew install rcm
+
+Install [antigen](https://github.com/zsh-users/antigen) to handle zsh plugins:
+
+    git clone https://github.com/zsh-users/antigen.git ~/.antigen
+
 
 Installation
 ------------
 
-  1. Clone the repository:
+Clone [thoughbot dotfiles](https://github.com/thoughtbot/dotfiles):
 
-        git clone --recursive git@github.com:jsntv200/dotfiles.git "${HOME}/.dotfiles"
+    git clone git://github.com/thoughtbot/dotfiles.git ~/.dotfiles
 
-  2. Link the dotfiles:
+Clone this repo:
 
-        cd ~/.dotfiles && rake
+    git clone git://github.com/jsntv200/dotfiles.git ~/.dotfiles-local
 
-  3. Install submodules
+Install the dotfiles:
 
-        git submodule init
+    env RCRC=$HOME/.dotfiles-local/rcrc rcup
 
-  4. Update submodules
+After the initial installation, you can run `rcup` without the one-time variable
+`RCRC` being set (`rcup` will symlink the repo's `rcrc` to `~/.rcrc` for future
+runs of `rcup`). [See
+example](https://github.com/thoughtbot/dotfiles/blob/master/rcrc).
 
-        git pull --recurse-submodules
+You should run `rcup` after pulling a new version of the repository to symlink
+any new files in the repository.
+
+
+Post Installation
+-----------------
+
+Install Inconsolata-dz for Powerline
+
+    brew install caskroom/cask/brew-cask
+    brew tap caskroom/fonts
+    brew cask install font-inconsolata-dz-for-powerline
+
+After installation set iTerm to load preferences from ~/.iterm & set the font.

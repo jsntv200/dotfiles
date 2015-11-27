@@ -1,0 +1,22 @@
+" Style
+colorscheme gruvbox
+
+set background=dark
+set guifont=Inconsolata-dz\ for\ Powerline:h15
+
+" Highlight current line
+set cursorline
+
+" Status line
+set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+
+" Search history & highlight
+set incsearch
+set hlsearch
+
+" Clear the search buffer when hitting return
+function! MapCR()
+  nnoremap <cr> :nohlsearch<cr>
+endfunction
+call MapCR()
+nnoremap <leader><leader> <c-^>

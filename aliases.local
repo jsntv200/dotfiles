@@ -1,0 +1,21 @@
+# ps
+alias psa='ps aux'
+alias psg='ps aux | ag '
+alias psr='ps aux | ag ruby'
+
+# common shell functions
+alias tf='tail -f'
+alias lh='ls -alt | head'
+alias lag='la | ag'
+alias bower='noglob bower'
+alias k9='kill -9'
+alias p='less'
+
+# gzip
+alias gzc='tar -zcvf'
+alias gzx='tar -zxvf'
+
+# spotlight shortcuts
+alias spotlight-start='sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist'
+alias spotlight-stop='sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist'
+alias spotlight-restart='spotlight-stop && spotlight-start'
