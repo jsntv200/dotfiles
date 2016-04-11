@@ -21,9 +21,9 @@ Install [rcm](https://github.com/thoughtbot/rcm):
     brew tap thoughtbot/formulae
     brew install rcm
 
-Install [antigen](https://github.com/zsh-users/antigen) to handle zsh plugins:
+Install [zgen](https://github.com/tarjoilija/zgen) to handle zsh plugins:
 
-    git clone https://github.com/zsh-users/antigen.git ~/.antigen
+    git clone git clone https://github.com/tarjoilija/zgen.git ~/.zgen
 
 
 Installation
