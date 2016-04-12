@@ -5,7 +5,7 @@ if [ -f ${HOME}/.zgen/zgen.zsh ]; then
   source ${HOME}/.zgen/zgen.zsh
 
   # Watch for changes in this file and call `zgen reset`
-  export ZGEN_RESET_ON_CHANGE=(${HOME}/.dotfiles-local/zsh/configs/post/zgen.zsh)
+  export ZGEN_RESET_ON_CHANGE=${HOME}/.dotfiles-local/zsh/configs/post/zgen.zsh
 
   if ! zgen saved; then
     zgen oh-my-zsh
