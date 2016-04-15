@@ -1,8 +1,10 @@
 " Style
-colorscheme gruvbox
+colorscheme solarized
+" colorscheme gruvbox
 
 set background=dark
-set guifont=Inconsolata-dz\ for\ Powerline:h15
+set guifont=Monaco:h14
+" set guifont=Inconsolata-dz\ for\ Powerline:h15
 
 " Highlight current line
 set cursorline

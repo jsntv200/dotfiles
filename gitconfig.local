@@ -2,14 +2,11 @@
   protocol = https
 
 [user]
-  name = Jason Taylor
-  email = jason@redant.com.au
+  name = convexstyle
+  email = convexstyle@gmail.com
 
 [core]
   editor = vim
-
-[credential]
-  helper = /opt/boxen/bin/boxen-git-credential
 
 [color "branch"]
   current = yellow reverse
@@ -22,12 +19,16 @@
   old = red bold
   new = green bold
 
+[core]
+  excludesfile = /Users/convexstyle/.gitignore
+
 [merge]
   ff = false
 
 [alias]
   # branch
   b = branch -v                     # branch (verbose)
+  br = branch -v                     # branch (verbose)
 
   # checkout
   nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
@@ -46,6 +47,10 @@
   short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
   changelog = log --pretty=format:\" * %s\"
   shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
+  pol  = log --pretty=oneline
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  open = browse
+  r = remote -v
 
   # rebase
   rc = rebase --continue            # continue rebase
