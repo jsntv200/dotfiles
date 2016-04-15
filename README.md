@@ -23,7 +23,7 @@ Install [rcm](https://github.com/thoughtbot/rcm):
 
 Install [zgen](https://github.com/tarjoilija/zgen) to handle zsh plugins:
 
-    git clone git clone https://github.com/tarjoilija/zgen.git ~/.zgen
+    git clone https://github.com/tarjoilija/zgen.git ~/.zgen
 
 
 Installation
@@ -35,7 +35,7 @@ Clone [thoughbot dotfiles](https://github.com/thoughtbot/dotfiles):
 
 Clone this repo:
 
-    git clone git://github.com/jsntv200/dotfiles.git ~/.dotfiles-local
+    git clone git://github.com/convexstyle/dotfiles.git ~/.dotfiles-local
 
 Install the dotfiles:
 

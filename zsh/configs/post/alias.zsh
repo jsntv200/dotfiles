@@ -1,0 +1,5 @@
+alias v='mvim'
+alias oc='open .'
+alias resetup='git fetch upstream && git reset --hard upstream/master'
+alias resetor='git fetch origin && git reset --hard origin/master'
+alias pi='pod install'
