@@ -1,7 +1,6 @@
 # ps
 alias psa='ps aux'
 alias psg='ps aux | ag '
-alias psr='ps aux | ag ruby'
 
 # common shell functions
 alias tf='tail -f'
