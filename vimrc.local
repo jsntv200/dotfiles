@@ -29,3 +29,9 @@ let g:used_javascript_libs = 'jquery,underscore,angularjs,angularui,angularuirou
 
 " show any linting errors immediately
 let g:syntastic_check_on_open = 1
+
+"enable keyboard shortcuts
+let g:tern_map_keys=1
+
+"show argument hints
+let g:tern_show_argument_hints='on_hold'
