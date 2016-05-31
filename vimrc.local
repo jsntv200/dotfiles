@@ -26,3 +26,6 @@ autocmd BufRead,BufNewFile *.es6 set filetype=javascript
 
 " Javascript libraries syntax
 let g:used_javascript_libs = 'jquery,underscore,angularjs,angularui,angularuirouter,react,flux,requirejs,jasmine'
+
+" show any linting errors immediately
+let g:syntastic_check_on_open = 1
