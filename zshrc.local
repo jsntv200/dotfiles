@@ -10,3 +10,6 @@ ulimit -n 4096
 
 # Path to andoid-sdk
 export ANDROID_HOME=/opt/boxen/homebrew/opt/android-sdk
+
+# Grunt auto-completion
+eval "$(grunt --completion=zsh)"
