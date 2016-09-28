@@ -11,8 +11,5 @@ ulimit -n 4096
 # Path to andoid-sdk
 export ANDROID_HOME=/opt/boxen/homebrew/opt/android-sdk
 
-# Path to git template dir
-export GIT_TEMPLATE_DIR=~/.git-template
-
 # Grunt auto-completion
 eval "$(grunt --completion=zsh)"
