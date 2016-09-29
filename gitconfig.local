@@ -1,15 +1,9 @@
-[hub]
-  protocol = https
-
 [user]
   name = Jason Taylor
   email = jason@redant.com.au
 
 [core]
   editor = vim
-
-[credential]
-  helper = /opt/boxen/bin/boxen-git-credential
 
 [color "branch"]
   current = yellow reverse
@@ -80,4 +74,8 @@
   # instead of a/b/c/d as prefixes for patches
   mnemonicprefix = true
 
+[hub]
+  protocol = https
 
+[credential]
+  helper = /opt/boxen/bin/boxen-git-credential
