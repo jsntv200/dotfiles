@@ -22,6 +22,9 @@
   old = red bold
   new = green bold
 
+[merge]
+  ff = false
+
 [alias]
   # branch
   b = branch -v                     # branch (verbose)
