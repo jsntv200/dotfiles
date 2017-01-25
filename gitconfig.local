@@ -21,7 +21,7 @@
 
 [alias]
   # branch
-  b = branch -v                     # branch (verbose)
+  b = branch -v --sort=-committerdate  # branch (verbose)
 
   # checkout
   nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
