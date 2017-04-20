@@ -1,0 +1,28 @@
+#!/bin/sh
+
+has_hook_script () {
+  [ -f package.json ] && cat package.json | grep -q "\"$1\"[[:space:]]*:"
+}
+
+command_exists () {
+  command -v "$1" >/dev/null 2>&1
+}
+
+cd .
+
+has_hook_script precommit || exit 0
+
+command_exists yarn || {
+  echo
+  echo >&2 "> precommit - Can't find yarn in PATH. Skipping precommit script in package.json"
+  exit 0
+}
+
+export GIT_PARAMS="$*"
+
+yarn precommit || {
+  echo
+  echo "> precommit hook failed"
+  echo "> Use 'yarn precommit' to debug"
+  exit 1
+}
