@@ -76,6 +76,3 @@
 
 [hub]
   protocol = https
-
-[credential]
-  helper = /opt/boxen/bin/boxen-git-credential

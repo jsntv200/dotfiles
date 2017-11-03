@@ -6,7 +6,6 @@ alias psg='ps aux | ag '
 alias tf='tail -f'
 alias lh='ls -alt | head'
 alias lag='la | ag'
-alias bower='noglob bower'
 alias k9='kill -9'
 alias p='less'
 
