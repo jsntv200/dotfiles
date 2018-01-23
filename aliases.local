@@ -23,3 +23,8 @@ alias dc='docker-compose'
 alias dcr='dc run'
 alias dcb='dc build'
 alias dcu='dc up'
+
+# Docker clean up
+# https://zaiste.net/removing_docker_containers
+alias docker-remove-exited='docker ps -aq --no-trunc -f status=exited | xargs docker rm'
+alias docker-remove-dangling='docker images -q --filter dangling=true | xargs docker rmi'
