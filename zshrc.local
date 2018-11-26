@@ -5,3 +5,6 @@ ulimit -n 4096
 # Secrets
 [ -f ~/.secrets ] && source ~/.secrets
 
+# Source asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# install brew
+# ref: https://brew.sh/
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# install brews
+brew bundle "$HOME/.dotfiles-local/Brewfile"

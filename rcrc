@@ -1,2 +1,2 @@
-EXCLUDES="README*.md LICENSE iTerm Brewfile"
+EXCLUDES="README*.md LICENSE iTerm Brewfile install"
 DOTFILES_DIRS="$HOME/.dotfiles-local $HOME/.dotfiles"

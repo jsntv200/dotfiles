@@ -1,4 +1,3 @@
-tap "codekitchen/dinghy"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -7,24 +6,12 @@ tap "homebrew/services"
 tap "phinze/cask"
 tap "thoughtbot/formulae"
 
-brew "coreutils"
-brew "docker-compose"
-brew "docker-machine-driver-xhyve"
 brew "deis"
-brew "gnupg"
-brew "graphviz"
 brew "hub"
 brew "imagemagick"
 brew "jq"
-brew "mysql@5.5", restart_service: true, link: true
-brew "postgresql", restart_service: true
-brew "redis", restart_service: true
 brew "the_silver_searcher"
 brew "unrar"
-brew "watchman"
-brew "xhyve", args: ["HEAD"]
-brew "yarn"
-brew "codekitchen/dinghy/dinghy"
 brew "thoughtbot/formulae/rcm"
 
 cask "font-inconsolata-dz-for-powerline"
