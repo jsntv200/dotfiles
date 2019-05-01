@@ -29,3 +29,6 @@ alias dcu='dc up'
 alias docker-remove-exited='docker ps -aq --no-trunc -f status=exited | xargs docker rm'
 alias docker-remove-dangling='docker images -q --filter dangling=true | xargs docker rmi'
 alias docker-remove-all='docker-remove-exited && docker-remove-dangling'
+
+# Bundle
+alias be='bundle exec'
