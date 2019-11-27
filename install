@@ -1,21 +1,31 @@
 #!/bin/bash
 
+info() {
+  echo "$(tput setaf 4)--->(tput sgr0) $1"
+}
+
 # install brew
 # ref: https://brew.sh/
+info "Installing brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install brews
+info "Installing from brewfile"
 brew bundle "$HOME/.dotfiles-local/Brewfile"
 
+# install zgen
+info "Installing zgen"
+git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+
 # install asdf
+info "Installing asdf"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.6.2
 
-# install asdf-nodejs
-asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
-
 # install asdf-ruby
+info "Installing asdf-ruby"
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 
-# install yarn
-curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+# install asdf-nodejs
+info "Installing asdf-nodejs"
+asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring

@@ -1,2 +1,5 @@
 bundler
 pry
+pry-rails
+pry-remote
+rails
