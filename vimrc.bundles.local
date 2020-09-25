@@ -1,3 +1,7 @@
+UnPlug 'ale'
+UnPlug 'fzf'
+UnPlug 'fzf.vim'
+
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'claco/jasmine.vim'
 Plug 'garbas/vim-snipmate'

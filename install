@@ -7,7 +7,7 @@ info() {
 # install brew
 # ref: https://brew.sh/
 info "Installing brew"
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # install brews
 info "Installing from brewfile"
@@ -19,13 +19,25 @@ git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
 
 # install asdf
 info "Installing asdf"
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.6.2
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
 
 # install asdf-ruby
+# https://github.com/asdf-vm/asdf-ruby
 info "Installing asdf-ruby"
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 
 # install asdf-nodejs
+# https://github.com/asdf-vm/asdf-nodejs
 info "Installing asdf-nodejs"
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
+
+# install asdf-yarn
+# https://github.com/twuni/asdf-yarn
+info "Installing asdf-yarn"
+asdf plugin-add yarn
+
+# install asdf-postgres
+# https://github.com/smashedtoatoms/asdf-postgres
+info "Installing asdf-postgres"
+asdf plugin-add postgres

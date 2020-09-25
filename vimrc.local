@@ -43,3 +43,9 @@ let g:syntastic_style_warning_symbol='💩'
 
 " Show argument hints
 " let g:tern_show_argument_hints='on_hold'
+
+" Disable ALE as its throwing an error
+" https://github.com/thoughtbot/dotfiles/issues/656
+augroup ale
+  autocmd!
+augroup END
