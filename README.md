@@ -1,31 +1,11 @@
-dotfiles
+Install
 ========
 
-Local dotfiles for use with
-[thoughbot dotfiles](https://github.com/thoughtbot/dotfiles)
+Just run the install script
 
-
-Installation
-------------
-
-Set the shell to zsh:
-
-    chsh -s $(which zsh)
-
-Clone [thoughbot dotfiles](https://github.com/thoughtbot/dotfiles):
-
-    git clone git://github.com/thoughtbot/dotfiles.git ~/.dotfiles
-
-Clone this repo:
-
-    git clone git://github.com/jsntv200/dotfiles.git ~/.dotfiles-local
-
-Install the dotfiles:
-
-    env RCRC=$HOME/.dotfiles-local/rcrc rcup
-
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jsntv200/dotfiles/master/lib/install.sh)"
 
 Post Installation
 -----------------
 
-Set iTerm to load preferences from ~/.iterm & set the font.
+Set iTerm to load preferences from ~/.dotfiles-local/lib/.iterm then set the font.
