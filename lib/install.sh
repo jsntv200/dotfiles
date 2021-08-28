@@ -9,7 +9,8 @@ info "Installing brew"
 /bin/bash -c $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)
 
 info "Installing dependencies from Brewfile"
-brew bundle --file https://raw.githubusercontent.com/jsntv200/dotfiles/master/lib/Brewfile
+curl -o /tmp/Brewfile https://raw.githubusercontent.com/jsntv200/dotfiles/master/lib/Brewfile
+brew bundle --file /tmp/Brewfile
 
 info "Add asdf path to .zprofile"
 echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zprofile
