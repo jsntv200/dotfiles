@@ -19,6 +19,7 @@ if [ -f ${HOME}/.zgen/zgen.zsh ]; then
     # oh-my-zsh plugins
     zgen oh-my-zsh plugins/zsh_reload
     zgen oh-my-zsh plugins/history
+    zgen oh-my-zsh plugins/dotenv
 
     # Load the theme
     zgen load mafredri/zsh-async

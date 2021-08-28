@@ -38,6 +38,9 @@ let g:syntastic_warning_symbol='💩'
 let g:syntastic_style_error_symbol='❌'
 let g:syntastic_style_warning_symbol='💩'
 
+" SnipMate parser
+let g:snipMate = { 'snippet_version' : 1 }
+
 " Enable keyboard shortcuts
 " let g:tern_map_keys=1
 

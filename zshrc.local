@@ -1,2 +1,5 @@
 # Alias hub to github
 eval "$(hub alias -s)"
+
+# Path to deno
+export PATH="/Users/jason/.deno/bin:$PATH"
