@@ -11,7 +11,7 @@ info "Installing brew"
 
 # install brews
 info "Installing from brewfile"
-brew bundle "$HOME/.dotfiles-local/Brewfile"
+brew bundle --file "$HOME/.dotfiles-local/Brewfile"
 
 # install zgen
 info "Installing zgen"
