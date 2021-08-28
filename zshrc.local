@@ -3,3 +3,8 @@ eval "$(hub alias -s)"
 
 # Path to deno
 export PATH="/Users/jason/.deno/bin:$PATH"
+
+# https://github.com/sindresorhus/pure#getting-started
+ZSH_THEME=""
+autoload -U promptinit; promptinit
+prompt pure

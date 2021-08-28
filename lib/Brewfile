@@ -14,6 +14,7 @@ brew "the_silver_searcher"
 brew "unar"
 brew "rcm"
 brew "asdf"
+brew "pure"
 
 cask "font-inconsolata-dz-for-powerline"
 cask "1password"

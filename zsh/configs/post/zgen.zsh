@@ -21,10 +21,6 @@ if [ -f ${HOME}/.zgen/zgen.zsh ]; then
     zgen oh-my-zsh plugins/history
     zgen oh-my-zsh plugins/dotenv
 
-    # Load the theme
-    zgen load mafredri/zsh-async
-    zgen load sindresorhus/pure
-
     # generate the init script from plugins above
     zgen save
   fi
