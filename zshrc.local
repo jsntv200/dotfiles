@@ -1,10 +1,10 @@
-# Alias hub to github
-eval "$(hub alias -s)"
-
-# Path to deno
-export PATH="/Users/jason/.deno/bin:$PATH"
+# Source asdf
+. $(brew --prefix asdf)/libexec/asdf.sh
 
 # https://github.com/sindresorhus/pure#getting-started
 ZSH_THEME=""
 autoload -U promptinit; promptinit
 prompt pure
+
+# Alias hub to github
+eval "$(hub alias -s)"

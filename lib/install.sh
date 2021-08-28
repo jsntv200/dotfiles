@@ -12,9 +12,6 @@ info "Installing dependencies from Brewfile"
 curl -o /tmp/Brewfile https://raw.githubusercontent.com/jsntv200/dotfiles/master/lib/Brewfile
 brew bundle --file /tmp/Brewfile
 
-info "Add asdf path to .zprofile"
-echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zprofile
-
 # https://github.com/tarjoilija/zgen
 info "Installing zgen"
 git clone https://github.com/tarjoilija/zgen.git ${HOME}/.zgen
@@ -52,3 +49,6 @@ asdf plugin-add postgres
 
 info "Install versions specified in .tool-versions"
 asdf install
+
+info "Install fonts to ~/Library/Fonts"
+tar -xzvf ${HOME}/.dotfiles-local/lib/fonts.tar.gz -C ${HOME}/Library/Fonts
