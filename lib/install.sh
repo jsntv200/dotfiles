@@ -43,12 +43,11 @@ asdf plugin-add yarn
 info "Installing asdf-postgres"
 asdf plugin-add postgres
 
-# https://github.com/smashedtoatoms/asdf-postgres
-info "Installing asdf-postgres"
-asdf plugin-add postgres
-
 info "Install versions specified in .tool-versions"
 asdf install
 
 info "Install fonts to ~/Library/Fonts"
 tar -xzvf ${HOME}/.dotfiles-local/lib/fonts.tar.gz -C ${HOME}/Library/Fonts
+
+info "Starting redis"
+brew services start redis
