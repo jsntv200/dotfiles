@@ -17,7 +17,6 @@ if [ -f ${HOME}/.zgen/zgen.zsh ]; then
     zgen load zsh-users/zsh-completions src
 
     # oh-my-zsh plugins
-    zgen oh-my-zsh plugins/zsh_reload
     zgen oh-my-zsh plugins/history
     zgen oh-my-zsh plugins/dotenv
 
