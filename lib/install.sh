@@ -9,7 +9,7 @@ info "Installing brew"
 /bin/bash -c $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)
 
 info "Installing dependencies from Brewfile"
-curl -o /tmp/Brewfile https://raw.githubusercontent.com/jsntv200/dotfiles/master/lib/Brewfile
+curl -o /tmp/Brewfile https://raw.githubusercontent.com/DigitalSuey/dotfiles/master/lib/Brewfile
 brew bundle --file /tmp/Brewfile
 
 # https://github.com/tarjoilija/zgen
@@ -21,7 +21,7 @@ info "Checkout thoughtbot dotfiles"
 git clone git://github.com/thoughtbot/dotfiles.git ${HOME}/.dotfiles
 
 info "Checkout dotfiles.local"
-git clone git://github.com/jsntv200/dotfiles.git ${HOME}/.dotfiles-local
+git clone git://github.com/DigitalSuey/dotfiles.git ${HOME}/.dotfiles-local
 
 info "Installing dotfiles"
 env RCRC=$HOME/.dotfiles-local/rcrc rcup

@@ -8,7 +8,7 @@ Local setup for [thoughtbot dotfiles](https://github.com/thoughtbot/dotfiles) wi
 Install
 -----------
 
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/jsntv200/dotfiles/master/lib/install.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/DigitalSuey/dotfiles/master/lib/install.sh)"
 
 Post Install
 -------------------
