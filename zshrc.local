@@ -1,8 +1,8 @@
 # Source asdf
-. $(brew --prefix asdf)/libexec/asdf.sh
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 # https://github.com/sindresorhus/pure#getting-started
-ZSH_THEME=""
 autoload -U promptinit; promptinit
 prompt pure
 

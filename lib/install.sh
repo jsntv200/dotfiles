@@ -26,22 +26,22 @@ git clone git://github.com/jsntv200/dotfiles.git ${HOME}/.dotfiles-local
 info "Installing dotfiles"
 env RCRC=$HOME/.dotfiles-local/rcrc rcup
 
+# https://asdf-vm.com/guide/getting-started.html#_2-download-asdf
+# Seems to work better installed manually rather than brew
+info "Install asdf"
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
+
 # https://github.com/asdf-vm/asdf-ruby
 info "Installing asdf-ruby"
-asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 
 # https://github.com/asdf-vm/asdf-nodejs
 info "Installing asdf-nodejs"
-asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 
 # https://github.com/twuni/asdf-yarn
 info "Installing asdf-yarn"
-asdf plugin-add yarn
-
-# https://github.com/smashedtoatoms/asdf-postgres
-info "Installing asdf-postgres"
-asdf plugin-add postgres
+asdf plugin add yarn
 
 info "Install versions specified in .tool-versions"
 asdf install
