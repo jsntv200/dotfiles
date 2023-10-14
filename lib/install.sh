@@ -29,7 +29,7 @@ env RCRC=$HOME/.dotfiles-local/rcrc rcup
 # https://asdf-vm.com/guide/getting-started.html#_2-download-asdf
 # Seems to work better installed manually rather than brew
 info "Install asdf"
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
 
 # https://github.com/asdf-vm/asdf-ruby
 info "Installing asdf-ruby"
@@ -39,15 +39,8 @@ asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 info "Installing asdf-nodejs"
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 
-# https://github.com/twuni/asdf-yarn
-info "Installing asdf-yarn"
-asdf plugin add yarn
-
 info "Install versions specified in .tool-versions"
 asdf install
 
 info "Install fonts to ~/Library/Fonts"
 tar -xzvf ${HOME}/.dotfiles-local/lib/fonts.tar.gz -C ${HOME}/Library/Fonts
-
-info "Starting redis"
-brew services start redis
